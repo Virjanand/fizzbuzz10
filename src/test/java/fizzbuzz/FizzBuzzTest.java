@@ -8,7 +8,6 @@ public class FizzBuzzTest {
 
     @Test
     void get100Numbers() {
-
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.fizzBuzzNumbers()).hasSize(100);
     }
