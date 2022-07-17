@@ -6,13 +6,13 @@ import java.util.stream.IntStream;
 
 public class FizzBuzz {
     public List<String> fizzBuzzNumbers() {
-        return IntStream.rangeClosed(1, 100).mapToObj(i -> toFizzBuzz(i)).collect(Collectors.toList());
+        return IntStream.rangeClosed(1, 100).mapToObj(this::toFizzBuzz).collect(Collectors.toList());
     }
 
-    private String toFizzBuzz(int i) {
-        if (i == 3) {
+    private String toFizzBuzz(int number) {
+        if (number == 3) {
             return "Fizz";
         }
-        return Integer.toString(i);
+        return Integer.toString(number);
     }
 }
