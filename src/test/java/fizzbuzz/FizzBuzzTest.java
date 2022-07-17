@@ -18,6 +18,7 @@ public class FizzBuzzTest {
     @CsvSource(
             {
                     "3, Fizz",
+                    "5, Buzz",
             }
     )
     void replaceNumberWithFizzBuzzString(int number, String fizzBuzzString) {
